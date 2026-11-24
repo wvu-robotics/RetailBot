@@ -1,0 +1,8 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 53  # Hz
+    rb_indiv_controller:
+      type: "rb_indiv_controller/RbIndivController"
+      # type: "diff_drive_controller::RbIndivController"
+    test_cont:
+      type: "diff_drive_controller/DiffDriveController"

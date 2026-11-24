@@ -1,0 +1,8 @@
+KERNEL=="tty*", KERNELS=="3-1.2.4", ATTRS{idVendor}=="20d2", ATTRS{idProduct}=="5740" , MODE:="0666", SYMLINK+="left_roboteq"
+
+KERNEL=="tty*", KERNELS=="3-1.2.2", ATTRS{idVendor}=="20d2", ATTRS{idProduct}=="5740" , MODE:="0666", SYMLINK+="right_roboteq"
+
+SUBSYSTEM=="tty", ATTRS{serial}=="E6612483CB1C7225", SYMLINK+="pico_prog", MODE="0666"                 
+SUBSYSTEM=="tty", ATTRS{serial}=="E6612483CB173124", SYMLINK+="pico_imu", MODE="0666"    
+
+SUBSYSTEM=="usb", ATTR{idVendor}=="2e8a", ATTR{idProduct}=="000a", MODE="0777"

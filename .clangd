@@ -1,0 +1,12 @@
+
+# Clangd doesn't let you specify where the config file is as a flag or disable inlay hints as a flag. Guess I just have to put a dotfile in my top level dir?
+# Open issues on these since 2021...
+# https://github.com/clangd/clangd/issues/845
+# https://github.com/clangd/clangd/discussions/986
+# The --inlay-hints=false was intentional deprecated with no replacement, why?...
+
+# https://clangd.llvm.org/config.html#files
+# Alternatively I could put this file in ~/.config/
+# But that means it's not portable with the project so that's a poor option.
+InlayHints:
+  Enabled: No

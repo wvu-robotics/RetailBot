@@ -1,0 +1,14 @@
+[project]
+name = "rb_analysis"
+version = "0.1.0"
+description = "Rosbag, vicon, and slip calculation utilities."
+authors = [{name = "NateP"}]
+dependencies = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]

@@ -1,0 +1,108 @@
+services:
+  rb:
+    image: rb
+    container_name: rb
+    build:
+      context: ..
+      dockerfile: .container/Dockerfile
+      target: rb-base
+      args:
+        USERNAME: rb
+        DOCKER_REPO: ros
+        ROS_DISTRO: jazzy
+        IMAGE_SUFFIX:
+    privileged: true
+    user: rb
+    network_mode: host
+    pid: "host"
+    ipc: "host"
+    tty: true
+    environment:
+      DISPLAY: "${DISPLAY}"
+      ROS_DOMAIN_ID: "96"
+      SHELL: "/bin/bash"
+      ROS_WS: "/home/rb/retail-bot"
+      SSH_AUTH_SOCK: /run/host-services/ssh-auth.sock
+      SSHD_PORT: "2222"
+    volumes:
+      - type: bind
+        source: "../"
+        target: "/home/rb/retail-bot"
+      - type: bind
+        source: "/tmp/.X11-unix"
+        target: "/tmp/.X11-unix"
+      - type: bind
+        source: "/dev"
+        target: "/dev"
+      - type: bind
+        source: "${HOME}/.gitconfig"
+        target: "/home/rb/.gitconfig"
+      - type: bind
+        source: "${HOME}/.ssh/authorized_keys"
+        target: "/home/rb/.ssh/authorized_keys"
+      - type: bind
+        source: ${SSH_AUTH_SOCK}
+        target: /run/host-services/ssh-auth.sock
+    working_dir: "/home/rb/retail-bot"
+    command: ["/home/rb/retail-bot/.container/entrypoint.sh"]
+
+  rb-gpu:
+    image: rb
+    container_name: rb-gpu
+    extends:
+      service: rb
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  rb-robot:
+    image: rb
+    container_name: rb-robot
+    extends:
+      service: rb-gpu
+    command: ["/home/rb/retail-bot/.container/robot-entrypoint.sh"]
+    volumes:
+      - type: bind
+        source: "../"
+        target: "/home/rb/retail-bot"
+      - type: bind
+        source: "/tmp/.X11-unix"
+        target: "/tmp/.X11-unix"
+      - type: bind
+        source: "/dev"
+        target: "/dev"
+      - type: bind
+        source: "${PWD}/.container/env.sh"
+        target: "/home/rb/.env.sh"
+      - type: bind
+        source: "${PWD}/.container/entrypoint.sh"
+        target: "/home/rb/.entrypoint.sh"
+      - type: bind
+        source: "${HOME}/.gitconfig"
+        target: "/home/rb/.gitconfig"
+      - type: bind
+        source: "${HOME}/.ssh/authorized_keys"
+        target: "/home/rb/.ssh/authorized_keys"
+      - type: bind
+        source: ${SSH_AUTH_SOCK}
+        target: /run/host-services/ssh-auth.sock
+    environment:
+      DISPLAY: "${DISPLAY}"
+      ROS_DOMAIN_ID: 96
+      SHELL: "/bin/bash"
+      ROS_WS: "/home/rb/retail-bot"
+      SSH_AUTH_SOCK: /run/host-services/ssh-auth.sock
+      SSHD_PORT: "2222"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes: {}

@@ -1,0 +1,3 @@
+export ROS_DOMAIN_ID=70
+# PICO_SDK
+

@@ -1,0 +1,62 @@
+{
+	"name": "rb-robot-container",
+	"privileged": true,
+	"containerUser": "rb",
+	"features": {
+		"ghcr.io/devcontainers/features/sshd:1": {
+			"SSHD_PORT": "2223",
+			"USERNAME": "rb",
+			"START_SSHD": "${localEnv:START_CONTAINER_SSHD:true}",
+			"NEW_PASSWORD": "roobit"
+		}
+	},
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"USERNAME": "rb",
+			"DOCKER_REPO": "osrf/ros",
+			"ROS_DISTRO": "jazzy",
+			"IMAGE_SUFFIX": "-desktop-full"
+		}
+	},
+	"workspaceFolder": "/home/rb/${localWorkspaceFolderBasename}",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/home/rb/${localWorkspaceFolderBasename},type=bind",
+	"containerEnv": {
+		"DISPLAY": "unix:0",
+		"ROS_LOCALHOST_ONLY": "SUBNET",
+		"ROS_DOMAIN_ID": "96",
+		"SHELL": "/bin/bash",
+		"ROS_WS": "${containerWorkspaceFolder}"
+	},
+	"hostRequirements": {
+		"gpu": "optional"
+	},
+	"runArgs": [
+		"--net=host",
+		"--pid=host",
+		"--ipc=host",
+		"-e",
+		"DISPLAY=${env:DISPLAY}",
+		"-e",
+		"ROS_DOMAIN_ID=96",
+		"-e",
+		"ROS_WS=/home/rb/${localWorkspaceFolderBasename}",
+		"-e",
+		"ROS_LOCALHOST_ONLY=SUBNET",
+		"--name",
+		"rb"
+	],
+	"mounts": [
+		{
+			"type": "bind",
+			"source": "/tmp/.X11-unix",
+			"target": "/tmp/.X11-unix"
+		},
+		{
+			"type": "bind",
+			"source": "/dev",
+			"target": "/dev"
+		}
+	],
+	"postCreateCommand": ".devcontainer/devcontainer-setup.sh"
+}

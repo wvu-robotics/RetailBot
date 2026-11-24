@@ -1,0 +1,14 @@
+{
+    "robot_name": "rb",
+    "assets_directory": "meshes",
+    "document_id": "21be734ff110e151ac9270d5",
+    "assembly_name": "urdf_convert",
+    "output_format": "urdf",
+    "package_name": "rb_description",
+    "output_filename": "rb_vanilla",
+    "add_dummy_base_link": "false",
+    "ignore": {
+        "frame_base_link": "all",
+        "*Flanged Ball Bearing*": "all"
+    }
+}

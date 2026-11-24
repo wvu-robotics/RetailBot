@@ -1,0 +1,1477 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 21be734ff110e151ac9270d5 -->
+<robot name="rb">
+  <!-- Link base_link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+  </link>
+  <!-- Link body_assembly -->
+  <link name="body_assembly">
+    <inertial>
+      <origin xyz="0.00110733 0.00205693 0.0728027" rpy="0 0 0"/>
+      <mass value="10.9362"/>
+      <inertia ixx="0.617808" ixy="-0.00135014" ixz="0.00103984" iyy="0.799455" iyz="0.000489571" izz="1.20869"/>
+    </inertial>
+    <!-- Part vicon_ball_2 -->
+    <visual>
+      <origin xyz="0.00684633 0.325088 0.032512" rpy="1.5708 1.08542e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/vicon_ball.stl"/>
+      </geometry>
+      <material name="vicon_ball_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00684633 0.325088 0.032512" rpy="1.5708 1.08542e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/vicon_ball.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part front_mounting_plate_blueprint -->
+    <visual>
+      <origin xyz="0.273165 -3.24155e-05 0.0325501" rpy="3.14159 2.39625e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/front_mounting_plate_blueprint.stl"/>
+      </geometry>
+      <material name="front_mounting_plate_blueprint_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.273165 -3.24155e-05 0.0325501" rpy="3.14159 2.39625e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/front_mounting_plate_blueprint.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part center_bar_2in -->
+    <visual>
+      <origin xyz="-0.00255167 -3.24155e-05 0.203962" rpy="1.5708 5.85179e-14 5.30687e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/center_bar_2in.stl"/>
+      </geometry>
+      <material name="center_bar_2in_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00255167 -3.24155e-05 0.203962" rpy="1.5708 5.85179e-14 5.30687e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/center_bar_2in.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mounting_plate_blueprint -->
+    <visual>
+      <origin xyz="0.0116088 -3.24155e-05 0.0325501" rpy="3.14159 1.54732e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/mounting_plate_blueprint.stl"/>
+      </geometry>
+      <material name="mounting_plate_blueprint_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0116088 -3.24155e-05 0.0325501" rpy="3.14159 1.54732e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/mounting_plate_blueprint.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part frame_tubing_v1_andrew_moorehead -->
+    <visual>
+      <origin xyz="-0.278269 -0.161957 0.207137" rpy="1.5708 9.55491e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/frame_tubing_v1_andrew_moorehead.stl"/>
+      </geometry>
+      <material name="frame_tubing_v1_andrew_moorehead_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.278269 -0.161957 0.207137" rpy="1.5708 9.55491e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/frame_tubing_v1_andrew_moorehead.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part lidar_base_tower -->
+    <visual>
+      <origin xyz="0.00684633 -3.24155e-05 0.216662" rpy="1.5708 2.02872e-14 2.12933"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/lidar_base_tower.stl"/>
+      </geometry>
+      <material name="lidar_base_tower_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00684633 -3.24155e-05 0.216662" rpy="1.5708 2.02872e-14 2.12933"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/lidar_base_tower.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part back_mounting_plate_blueprint -->
+    <visual>
+      <origin xyz="-0.278269 -3.24155e-05 0.0325501" rpy="-3.14159 -1.83409e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/back_mounting_plate_blueprint.stl"/>
+      </geometry>
+      <material name="back_mounting_plate_blueprint_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.278269 -3.24155e-05 0.0325501" rpy="-3.14159 -1.83409e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/back_mounting_plate_blueprint.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part frame_tubing_v1_andrew_moorehead_2 -->
+    <visual>
+      <origin xyz="-0.278269 0.161893 0.207137" rpy="1.5708 9.55491e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/frame_tubing_v1_andrew_moorehead.stl"/>
+      </geometry>
+      <material name="frame_tubing_v1_andrew_moorehead_2_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.278269 0.161893 0.207137" rpy="1.5708 9.55491e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/frame_tubing_v1_andrew_moorehead.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part lidar_mount_bracket_andrew_moorehead -->
+    <visual>
+      <origin xyz="0.00684633 -3.24155e-05 0.216662" rpy="1.5708 -5.04761e-14 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/lidar_mount_bracket_andrew_moorehead.stl"/>
+      </geometry>
+      <material name="lidar_mount_bracket_andrew_moorehead_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00684633 -3.24155e-05 0.216662" rpy="1.5708 -5.04761e-14 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/lidar_mount_bracket_andrew_moorehead.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part os1_lidar_sensor_externals__1__step -->
+    <visual>
+      <origin xyz="0.00684333 -3.31351e-05 0.459549" rpy="1.5708 3.37287e-14 1.80617"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/os1_lidar_sensor_externals__1__step.stl"/>
+      </geometry>
+      <material name="os1_lidar_sensor_externals__1__step_material">
+        <color rgba="0.796078 0.823529 0.937255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00684333 -3.31351e-05 0.459549" rpy="1.5708 3.37287e-14 1.80617"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/os1_lidar_sensor_externals__1__step.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part base_plate -->
+    <visual>
+      <origin xyz="0.00684633 -3.24155e-05 0" rpy="1.5708 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/base_plate.stl"/>
+      </geometry>
+      <material name="base_plate_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00684633 -3.24155e-05 0" rpy="1.5708 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/base_plate.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1 -->
+    <visual>
+      <origin xyz="0.0762 -0.0508 0.026162" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/part_1.stl"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0762 -0.0508 0.026162" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/part_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part axle_spacer -->
+    <visual>
+      <origin xyz="-0.323354 0.319373 0.032512" rpy="-1.5708 9.74393e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle_spacer.stl"/>
+      </geometry>
+      <material name="axle_spacer_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 0.319373 0.032512" rpy="-1.5708 9.74393e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle_spacer.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter -->
+    <visual>
+      <origin xyz="-0.323318 0.295179 0.0325477" rpy="1.5708 0.785398 -4.67545e-16"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323318 0.295179 0.0325477" rpy="1.5708 0.785398 -4.67545e-16"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_2 -->
+    <visual>
+      <origin xyz="-0.323354 0.334549 0.032512" rpy="1.5708 -0.785398 1.26748e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_2_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 0.334549 0.032512" rpy="1.5708 -0.785398 1.26748e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_3 -->
+    <visual>
+      <origin xyz="-0.307603 0.269779 0.0167608" rpy="1.5708 -0.785398 -3.51106e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_3_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.307603 0.269779 0.0167608" rpy="1.5708 -0.785398 -3.51106e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_4 -->
+    <visual>
+      <origin xyz="-0.323354 0.295179 0.032512" rpy="1.5708 0.785398 -4.67545e-16"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_4_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 0.295179 0.032512" rpy="1.5708 0.785398 -4.67545e-16"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part chassis_tube -->
+    <visual>
+      <origin xyz="-0.374154 0.260318 0.000762" rpy="-2.67848e-16 -9.74393e-16 -5.55112e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/chassis_tube.stl"/>
+      </geometry>
+      <material name="chassis_tube_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.374154 0.260318 0.000762" rpy="-2.67848e-16 -9.74393e-16 -5.55112e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/chassis_tube.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_5 -->
+    <visual>
+      <origin xyz="-0.323354 0.269779 0.032512" rpy="-1.5708 0.785398 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_5_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 0.269779 0.032512" rpy="-1.5708 0.785398 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_6 -->
+    <visual>
+      <origin xyz="-0.323389 0.334549 0.0325477" rpy="1.5708 -0.785398 1.26748e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_6_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323389 0.334549 0.0325477" rpy="1.5708 -0.785398 1.26748e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part zed2_ip_outer_with_lens_v8 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/zed2_ip_outer_with_lens_v8.stl"/>
+      </geometry>
+      <material name="zed2_ip_outer_with_lens_v8_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/zed2_ip_outer_with_lens_v8.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part zed2_ip_outer_with_lens_v8_2 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/zed2_ip_outer_with_lens_v8__2.stl"/>
+      </geometry>
+      <material name="zed2_ip_outer_with_lens_v8_2_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/zed2_ip_outer_with_lens_v8__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part optic -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic.stl"/>
+      </geometry>
+      <material name="optic_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part optic_1 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic_1.stl"/>
+      </geometry>
+      <material name="optic_1_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part optic_2 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic__2.stl"/>
+      </geometry>
+      <material name="optic_2_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part optic_1_2 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic_1__2.stl"/>
+      </geometry>
+      <material name="optic_1_2_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic_1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part optic_1_3 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic_1__3.stl"/>
+      </geometry>
+      <material name="optic_1_3_material">
+        <color rgba="0.192157 0.192157 0.192157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic_1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part zed2_ip_outer_with_lens_v8_3 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/zed2_ip_outer_with_lens_v8__3.stl"/>
+      </geometry>
+      <material name="zed2_ip_outer_with_lens_v8_3_material">
+        <color rgba="0.286275 0.286275 0.286275 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/zed2_ip_outer_with_lens_v8__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part optic_3 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic__3.stl"/>
+      </geometry>
+      <material name="optic_3_material">
+        <color rgba="0.192157 0.192157 0.192157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part optic_4 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic__4.stl"/>
+      </geometry>
+      <material name="optic_4_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part optic_1_4 -->
+    <visual>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic_1__4.stl"/>
+      </geometry>
+      <material name="optic_1_4_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0353741 0.00380814 0.502445" rpy="8.16748e-15 -4.13725e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/optic_1__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part axle_spacer_2 -->
+    <visual>
+      <origin xyz="0.337046 -0.319437 0.032512" rpy="-1.5708 7.9688e-15 1.9177e-32"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle_spacer.stl"/>
+      </geometry>
+      <material name="axle_spacer_2_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 -0.319437 0.032512" rpy="-1.5708 7.9688e-15 1.9177e-32"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle_spacer.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_7 -->
+    <visual>
+      <origin xyz="0.336996 -0.295244 0.0325164" rpy="1.5708 1.48353 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_7_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.336996 -0.295244 0.0325164" rpy="1.5708 1.48353 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_8 -->
+    <visual>
+      <origin xyz="0.337046 -0.334614 0.032512" rpy="1.5708 -0.0872665 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_8_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 -0.334614 0.032512" rpy="1.5708 -0.0872665 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_9 -->
+    <visual>
+      <origin xyz="0.335105 -0.269844 0.0103213" rpy="1.5708 -0.0872665 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_9_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.335105 -0.269844 0.0103213" rpy="1.5708 -0.0872665 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_10 -->
+    <visual>
+      <origin xyz="0.337046 -0.295244 0.032512" rpy="1.5708 1.48353 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_10_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 -0.295244 0.032512" rpy="1.5708 1.48353 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part chassis_tube_2 -->
+    <visual>
+      <origin xyz="0.387846 -0.260382 0.000762" rpy="-2.76412e-15 -7.9688e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/chassis_tube.stl"/>
+      </geometry>
+      <material name="chassis_tube_2_material">
+        <color rgba="0.866667 0.909804 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.387846 -0.260382 0.000762" rpy="-2.76412e-15 -7.9688e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/chassis_tube.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_11 -->
+    <visual>
+      <origin xyz="0.337046 -0.269844 0.032512" rpy="-1.5708 0.0872665 -1.7877e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_11_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 -0.269844 0.032512" rpy="-1.5708 0.0872665 -1.7877e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_12 -->
+    <visual>
+      <origin xyz="0.337051 -0.334614 0.0325623" rpy="1.5708 -0.0872665 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_12_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337051 -0.334614 0.0325623" rpy="1.5708 -0.0872665 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_2 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_3 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_4 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_5 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_6 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_7 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_8 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_9 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_10 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_11 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_12 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_13 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_14 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_15 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_16 -->
+    <!-- Part shaft_collar_5_8in_shaft_diameter_13 -->
+    <visual>
+      <origin xyz="0.337046 0.334549 0.032512" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_13_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 0.334549 0.032512" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_14 -->
+    <visual>
+      <origin xyz="0.337046 0.295179 0.032512" rpy="-1.5708 -1.73014e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_14_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 0.295179 0.032512" rpy="-1.5708 -1.73014e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_15 -->
+    <visual>
+      <origin xyz="0.337046 0.295179 0.0324615" rpy="-1.5708 1.33064e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_15_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 0.295179 0.0324615" rpy="-1.5708 1.33064e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_16 -->
+    <visual>
+      <origin xyz="0.314771 0.269779 0.032512" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_16_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.314771 0.269779 0.032512" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_17 -->
+    <visual>
+      <origin xyz="0.337097 0.334549 0.032512" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_17_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337097 0.334549 0.032512" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_18 -->
+    <visual>
+      <origin xyz="0.337046 0.269779 0.032512" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_18_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 0.269779 0.032512" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part axle_spacer_3 -->
+    <visual>
+      <origin xyz="0.337046 0.319373 0.032512" rpy="-1.5708 9.74393e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle_spacer.stl"/>
+      </geometry>
+      <material name="axle_spacer_3_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 0.319373 0.032512" rpy="-1.5708 9.74393e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle_spacer.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part superdroid_motor -->
+    <visual>
+      <origin xyz="0.337046 0.0577526 0.032512" rpy="-3.14159 0.785398 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/superdroid_motor.stl"/>
+      </geometry>
+      <material name="superdroid_motor_material">
+        <color rgba="0.913725 0.647059 0.329412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 0.0577526 0.032512" rpy="-3.14159 0.785398 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/superdroid_motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_plate_fixed -->
+    <visual>
+      <origin xyz="0.387846 0.257143 0.000762" rpy="3.90313e-16 1.42865e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/motor_plate_fixed.stl"/>
+      </geometry>
+      <material name="motor_plate_fixed_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.387846 0.257143 0.000762" rpy="3.90313e-16 1.42865e-15 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/motor_plate_fixed.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part superdroid_motor_2 -->
+    <visual>
+      <origin xyz="-0.323354 0.0577526 0.032512" rpy="3.14159 0.785398 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/superdroid_motor.stl"/>
+      </geometry>
+      <material name="superdroid_motor_2_material">
+        <color rgba="0.913725 0.647059 0.329412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 0.0577526 0.032512" rpy="3.14159 0.785398 3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/superdroid_motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_plate_fixed_2 -->
+    <visual>
+      <origin xyz="-0.272554 0.257143 0.000762" rpy="3.90313e-16 1.11186e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/motor_plate_fixed.stl"/>
+      </geometry>
+      <material name="motor_plate_fixed_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.272554 0.257143 0.000762" rpy="3.90313e-16 1.11186e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/motor_plate_fixed.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_17 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_18 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_19 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_20 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_21 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_22 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_23 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_24 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_25 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_26 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_27 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_28 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_29 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_30 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_31 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_32 -->
+    <!-- Part shaft_collar_5_8in_shaft_diameter_19 -->
+    <visual>
+      <origin xyz="-0.323354 -0.334614 0.032512" rpy="-1.5708 1.39626 1.74182e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_19_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 -0.334614 0.032512" rpy="-1.5708 1.39626 1.74182e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_20 -->
+    <visual>
+      <origin xyz="-0.323354 -0.295244 0.032512" rpy="-1.5708 -0.174533 -7.25368e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_20_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 -0.295244 0.032512" rpy="-1.5708 -0.174533 -7.25368e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_21 -->
+    <visual>
+      <origin xyz="-0.323345 -0.295244 0.0324623" rpy="-1.5708 -0.174533 -7.25368e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_21_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323345 -0.295244 0.0324623" rpy="-1.5708 -0.174533 -7.25368e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_22 -->
+    <visual>
+      <origin xyz="-0.301417 -0.269844 0.0363801" rpy="-1.5708 1.39626 3.06007e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_22_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.301417 -0.269844 0.0363801" rpy="-1.5708 1.39626 3.06007e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_23 -->
+    <visual>
+      <origin xyz="-0.323403 -0.334614 0.0325032" rpy="-1.5708 1.39626 1.78977e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_23_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323403 -0.334614 0.0325032" rpy="-1.5708 1.39626 1.78977e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shaft_collar_5_8in_shaft_diameter_24 -->
+    <visual>
+      <origin xyz="-0.323354 -0.269844 0.032512" rpy="1.5708 -1.39626 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+      <material name="shaft_collar_5_8in_shaft_diameter_24_material">
+        <color rgba="0.752941 0.752941 0.752941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 -0.269844 0.032512" rpy="1.5708 -1.39626 -3.14159"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/shaft_collar_5_8in_shaft_diameter__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part axle_spacer_4 -->
+    <visual>
+      <origin xyz="-0.323354 -0.319437 0.032512" rpy="-1.5708 7.9688e-15 1.9177e-32"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle_spacer.stl"/>
+      </geometry>
+      <material name="axle_spacer_4_material">
+        <color rgba="0.501961 0.501961 0.501961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 -0.319437 0.032512" rpy="-1.5708 7.9688e-15 1.9177e-32"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle_spacer.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part superdroid_motor_3 -->
+    <visual>
+      <origin xyz="-0.323354 -0.0578174 0.032512" rpy="-3.14159 0.785398 -3.38418e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/superdroid_motor.stl"/>
+      </geometry>
+      <material name="superdroid_motor_3_material">
+        <color rgba="0.913725 0.647059 0.329412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.323354 -0.0578174 0.032512" rpy="-3.14159 0.785398 -3.38418e-14"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/superdroid_motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_plate_fixed_3 -->
+    <visual>
+      <origin xyz="-0.374154 -0.257207 0.000762" rpy="2.88658e-15 1.02547e-14 3.04444e-16"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/motor_plate_fixed.stl"/>
+      </geometry>
+      <material name="motor_plate_fixed_3_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.374154 -0.257207 0.000762" rpy="2.88658e-15 1.02547e-14 3.04444e-16"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/motor_plate_fixed.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part superdroid_motor_4 -->
+    <visual>
+      <origin xyz="0.337046 -0.0578174 0.032512" rpy="-3.14159 0.785398 -4.09432e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/superdroid_motor.stl"/>
+      </geometry>
+      <material name="superdroid_motor_4_material">
+        <color rgba="0.913725 0.647059 0.329412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337046 -0.0578174 0.032512" rpy="-3.14159 0.785398 -4.09432e-15"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/superdroid_motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_plate_fixed_4 -->
+    <visual>
+      <origin xyz="0.286246 -0.257207 0.000762" rpy="2.88658e-15 3.34656e-15 5.38045e-16"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/motor_plate_fixed.stl"/>
+      </geometry>
+      <material name="motor_plate_fixed_4_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.286246 -0.257207 0.000762" rpy="2.88658e-15 3.34656e-15 5.38045e-16"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/motor_plate_fixed.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_33 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_34 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_35 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_36 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_37 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_38 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_39 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_40 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_41 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_42 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_43 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_44 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_45 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_46 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_47 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_48 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_49 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_50 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_51 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_52 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_53 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_54 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_55 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_56 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_57 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_58 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_59 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_60 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_61 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_62 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_63 -->
+    <!-- Part flanged_ball_bearing_1_5in_od_5_8_sd_64 -->
+  </link>
+  <!-- Frame vicon_ball (dummy link + fixed joint) -->
+  <link name="vicon_ball">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="vicon_ball_frame" type="fixed">
+    <origin xyz="0.00684633 0.339058 0.032512" rpy="8.55995e-16 -1.08542e-15 -7.80328e-16"/>
+    <parent link="body_assembly"/>
+    <child link="vicon_ball"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Frame zed (dummy link + fixed joint) -->
+  <link name="zed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="zed_frame" type="fixed">
+    <origin xyz="0.0871301 0.0548396 0.499829" rpy="4.13725e-16 8.38953e-15 -2.77556e-17"/>
+    <parent link="body_assembly"/>
+    <child link="zed"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Frame lidar (dummy link + fixed joint) -->
+  <link name="lidar">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="lidar_frame" type="fixed">
+    <origin xyz="0.00684333 -3.31351e-05 0.481299" rpy="-3.92966e-14 3.89136e-15 0.0608413"/>
+    <parent link="body_assembly"/>
+    <child link="lidar"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Frame imu (dummy link + fixed joint) -->
+  <link name="imu">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="imu_frame" type="fixed">
+    <origin xyz="0.0762 -0.0508 0.026162" rpy="-8.94398e-15 -0 -5.46215e-33"/>
+    <parent link="body_assembly"/>
+    <child link="imu"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Link fl_wheel -->
+  <link name="fl_wheel">
+    <inertial>
+      <origin xyz="-1.87324e-18 5.53795e-17 0.132884" rpy="0 0 0"/>
+      <mass value="4.63998"/>
+      <inertia ixx="0.0219427" ixy="2.63421e-19" ixz="3.62202e-21" iyy="0.0219427" iyz="-9.54297e-21" izz="0.0392201"/>
+    </inertial>
+    <!-- Part td_109_010 -->
+    <visual>
+      <origin xyz="0 5.55112e-17 0.133794" rpy="3.14159 3.96763e-31 7.45453e-18"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/td_109_010.stl"/>
+      </geometry>
+      <material name="td_109_010_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 5.55112e-17 0.133794" rpy="3.14159 3.96763e-31 7.45453e-18"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/td_109_010.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part axle -->
+    <visual>
+      <origin xyz="0 5.55112e-17 0.133794" rpy="3.14159 3.96763e-31 7.45453e-18"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle.stl"/>
+      </geometry>
+      <material name="axle_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 5.55112e-17 0.133794" rpy="3.14159 3.96763e-31 7.45453e-18"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame fl_tire (dummy link + fixed joint) -->
+  <link name="fl_tire">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="fl_tire_frame" type="fixed">
+    <origin xyz="6.93889e-18 5.55112e-17 0.133794" rpy="-4.10717e-15 -9.71543e-31 4.53742e-18"/>
+    <parent link="fl_wheel"/>
+    <child link="fl_tire"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from body_assembly to fl_wheel -->
+  <joint name="fl_wheel_joint" type="continuous">
+    <origin xyz="0.337046 0.257143 0.032512" rpy="-1.5708 -1.49947 4.11272e-14"/>
+    <parent link="body_assembly"/>
+    <child link="fl_wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link bl_wheel -->
+  <link name="bl_wheel">
+    <inertial>
+      <origin xyz="-1.87324e-18 5.53795e-17 0.132884" rpy="0 0 0"/>
+      <mass value="4.63998"/>
+      <inertia ixx="0.0219427" ixy="5.24496e-37" ixz="3.62202e-21" iyy="0.0219427" iyz="-9.54297e-21" izz="0.0392201"/>
+    </inertial>
+    <!-- Part td_109_010_2 -->
+    <visual>
+      <origin xyz="0 5.55112e-17 0.133795" rpy="-3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/td_109_010.stl"/>
+      </geometry>
+      <material name="td_109_010_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 5.55112e-17 0.133795" rpy="-3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/td_109_010.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part axle_2 -->
+    <visual>
+      <origin xyz="0 5.55112e-17 0.133795" rpy="-3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle.stl"/>
+      </geometry>
+      <material name="axle_2_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 5.55112e-17 0.133795" rpy="-3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame bl_tire (dummy link + fixed joint) -->
+  <link name="bl_tire">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="bl_tire_frame" type="fixed">
+    <origin xyz="4.85723e-17 5.55112e-17 0.133795" rpy="-1.44329e-15 7.77156e-16 -5.55112e-16"/>
+    <parent link="bl_wheel"/>
+    <child link="bl_tire"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from body_assembly to bl_wheel -->
+  <joint name="bl_wheel_joint" type="continuous">
+    <origin xyz="-0.323354 0.257143 0.032512" rpy="-1.5708 -1.5708 0"/>
+    <parent link="body_assembly"/>
+    <child link="bl_wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link br_wheel -->
+  <link name="br_wheel">
+    <inertial>
+      <origin xyz="1.59621e-18 1.31667e-19 -0.132884" rpy="0 0 0"/>
+      <mass value="4.63998"/>
+      <inertia ixx="0.0219427" ixy="1.41496e-19" ixz="-3.62202e-21" iyy="0.0219427" iyz="-9.54297e-21" izz="0.0392201"/>
+    </inertial>
+    <!-- Part td_109_010_3 -->
+    <visual>
+      <origin xyz="3.46945e-18 0 -0.133795" rpy="-1.87266e-30 1.57557e-30 -1.83259e-20"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/td_109_010.stl"/>
+      </geometry>
+      <material name="td_109_010_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="3.46945e-18 0 -0.133795" rpy="-1.87266e-30 1.57557e-30 -1.83259e-20"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/td_109_010.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part axle_3 -->
+    <visual>
+      <origin xyz="3.46945e-18 0 -0.133795" rpy="-1.87266e-30 1.57557e-30 -1.83259e-20"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle.stl"/>
+      </geometry>
+      <material name="axle_3_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="3.46945e-18 0 -0.133795" rpy="-1.87266e-30 1.57557e-30 -1.83259e-20"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame br_tire (dummy link + fixed joint) -->
+  <link name="br_tire">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="br_tire_frame" type="fixed">
+    <origin xyz="1.04083e-17 0 -0.133795" rpy="1.44307e-15 -3.13029e-16 -5.6471e-16"/>
+    <parent link="br_wheel"/>
+    <child link="br_tire"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from body_assembly to br_wheel -->
+  <joint name="br_wheel_joint" type="continuous">
+    <origin xyz="-0.323354 -0.257207 0.032512" rpy="-1.5708 -1.53914 -3.34226e-13"/>
+    <parent link="body_assembly"/>
+    <child link="br_wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link fr_wheel -->
+  <link name="fr_wheel">
+    <inertial>
+      <origin xyz="-1.87324e-18 1.31667e-19 -0.132884" rpy="0 0 0"/>
+      <mass value="4.63998"/>
+      <inertia ixx="0.0219427" ixy="-2.11964e-31" ixz="-3.62202e-21" iyy="0.0219427" iyz="-9.54297e-21" izz="0.0392201"/>
+    </inertial>
+    <!-- Part td_109_010_4 -->
+    <visual>
+      <origin xyz="0 0 -0.133795" rpy="5.15152e-32 2.34683e-31 -7.83931e-30"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/td_109_010.stl"/>
+      </geometry>
+      <material name="td_109_010_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.133795" rpy="5.15152e-32 2.34683e-31 -7.83931e-30"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/td_109_010.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part axle_4 -->
+    <visual>
+      <origin xyz="0 0 -0.133795" rpy="5.15152e-32 2.34683e-31 -7.83931e-30"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle.stl"/>
+      </geometry>
+      <material name="axle_4_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.133795" rpy="5.15152e-32 2.34683e-31 -7.83931e-30"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/axle.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame fr_tire (dummy link + fixed joint) -->
+  <link name="fr_tire">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="fr_tire_frame" type="fixed">
+    <origin xyz="6.93889e-18 0 -0.133795" rpy="-1.56626e-16 4.97314e-30 -8.38165e-31"/>
+    <parent link="fr_wheel"/>
+    <child link="fr_tire"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Joint from body_assembly to fr_wheel -->
+  <joint name="fr_wheel_joint" type="continuous">
+    <origin xyz="0.337046 -0.257207 0.032512" rpy="-1.5708 -1.5708 0"/>
+    <parent link="body_assembly"/>
+    <child link="fr_wheel"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Joint from base_link to body_assembly -->
+  <joint name="base_link_to_body_assembly" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="body_assembly"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link y -->
+  <link name="y">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part y -->
+    <visual>
+      <origin xyz="0.0871301 0.0548396 0.499829" rpy="4.13725e-16 8.38953e-15 -2.77556e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/y.stl"/>
+      </geometry>
+      <material name="y_material">
+        <color rgba="0.372549 0.654902 0.239216 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0871301 0.0548396 0.499829" rpy="4.13725e-16 8.38953e-15 -2.77556e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/y.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to y -->
+  <joint name="base_link_to_y" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="y"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link x -->
+  <link name="x">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part x -->
+    <visual>
+      <origin xyz="0.0871301 0.0548396 0.499829" rpy="4.13725e-16 8.38953e-15 -2.77556e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/x.stl"/>
+      </geometry>
+      <material name="x_material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0871301 0.0548396 0.499829" rpy="4.13725e-16 8.38953e-15 -2.77556e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/x.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to x -->
+  <joint name="base_link_to_x" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="x"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link z -->
+  <link name="z">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part z -->
+    <visual>
+      <origin xyz="0.0871301 0.0548396 0.499829" rpy="4.13725e-16 8.38953e-15 -2.77556e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/z.stl"/>
+      </geometry>
+      <material name="z_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0871301 0.0548396 0.499829" rpy="4.13725e-16 8.38953e-15 -2.77556e-17"/>
+      <geometry>
+        <mesh filename="package://rb_description/meshes/z.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to z -->
+  <joint name="base_link_to_z" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="z"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+</robot>

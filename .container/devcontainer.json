@@ -1,0 +1,48 @@
+{
+	"name": "rb-container",
+	"dockerComposeFile": "compose.yml",
+	"runServices": [
+		"rb"
+	],
+	"service": "rb",
+	"privileged": true,
+	"containerUser": "rb",
+	"containerEnv": {
+		"ROS_DOMAIN_ID": "96",
+		"ROS_WS": "${containerWorkspaceFolder}"
+	},
+	"mounts": [],
+	"hostRequirements": {
+		"gpu": "optional"
+	},
+	// "runArgs": [
+	// 	"--name",
+	// 	"rb"
+	// ],
+	"workspaceFolder": "/home/rb/${localWorkspaceFolderBasename}",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"http.proxySupport": "off",
+				"terminal.background": "#14000a",
+				"titleBar.activeBackground": "#5a0033"
+			},
+			"extensions": [
+				"ms-python.debugpy",
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-keymap",
+				"detachhead.basedpyright",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"ms-toolsai.jupyter-renderers",
+				"charliermarsh.ruff",
+				"detachhead.basedpyright",
+				"llvm-vs-code-extensions.vscode-clangd",
+				"jeanp413.open-remote-ssh",
+				"althack.ament-task-provider",
+				"xaver.clang-format",
+				"zachflower.uncrustify"
+			]
+		}
+	}
+}

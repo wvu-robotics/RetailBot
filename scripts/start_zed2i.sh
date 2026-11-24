@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --runtime nvidia -it --privileged --network=host --ipc=host --pid=host -e ROS_DOMAIN_ID=96 -e NVIDIA_DRIVER_CAPABILITIES=all -e DISPLAY=$DISPLAY   -v /tmp:/tmp   -v /dev:/dev   -v /var/nvidia/nvcam/settings/:/var/nvidia/nvcam/settings/   -v /etc/systemd/system/zed_x_daemon.service:/etc/systemd/system/zed_x_daemon.service   -v /usr/local/zed/resources/:/usr/local/zed/resources/   -v /usr/local/zed/settings/:/usr/local/zed/settings/   zed_ros2_desktop_u22.04_sdk_4.2.5_cuda_12.6.3:latest ros2 launch zed_wrapper zed_camera.launch.py camera_model:=zed2i

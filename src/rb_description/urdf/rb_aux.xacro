@@ -1,0 +1,9 @@
+<xacro:arg name="mode" default="real"/>
+
+<xacro:if value="${mode == 'sim'}">
+  <xacro:include filename="$(find rb_description)/urdf/sim_plugins.xacro"/>
+</xacro:if>
+
+<xacro:if value="${mode == 'real'}">
+  <xacro:include filename="$(find rb_description)/urdf/real_hw_interface.xacro"/>
+</xacro:if>

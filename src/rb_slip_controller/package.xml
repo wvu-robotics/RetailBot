@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rb_slip_controller</name>
+  <version>4.18.0</version>
+  <description>Individual Wheel Controller. Modified from demo diff_drive_controller</description>
+
+  <maintainer email="np00004@mix.wvu.edu">NateP</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>generate_parameter_library</build_depend>
+
+  <depend>ament_python</depend>
+
+  <depend>backward_ros</depend>
+  <depend>control_toolbox</depend>
+  <depend>controller_interface</depend>
+  <depend>geometry_msgs</depend>
+  <depend>hardware_interface</depend>
+  <depend>nav_msgs</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>rcpputils</depend>
+  <depend>realtime_tools</depend>
+  <depend>tf2</depend>
+  <depend>tf2_msgs</depend>
+  <depend>twist_slip_msg</depend>
+
+  <test_depend>ament_cmake_gmock</test_depend>
+  <test_depend>controller_manager</test_depend>
+  <test_depend>hardware_interface_testing</test_depend>
+  <test_depend>ros2_control_test_assets</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

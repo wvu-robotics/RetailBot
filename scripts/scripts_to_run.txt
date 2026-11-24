@@ -1,0 +1,62 @@
+GATHERING PACKAGES AND DEPENDENCIES:
+http://wiki.ros.org/rosdep
+http://wiki.ros.org/vcstool
+--------------------
+vcs import src < repos.yaml --recursive
+rosdep install --from-paths src --ignore-src -r -y
+sudo apt-get install ros-humble-joint-state-publisher
+sudo apt-get install ros-humble-joint-state-publisher-gui
+
+
+ROBOTEQ CONTROL PACKAGE DEPENDENCY:
+https://pyserial.readthedocs.io/en/latest/pyserial.html
+--------------------
+python3 -m pip install pyserial
+
+
+
+VELODYNE PACKAGE:
+https://wiki.ros.org/velodyne/Tutorials/Getting%20Started%20with%20the%20HDL-32E
+--------------------
+sudo apt-get install ros-humble-velodyne
+
+
+
+NAV 2:
+https://navigation.ros.org/getting_started/index.html
+--------------------
+sudo apt install ros-humble-navigation2
+sudo apt install ros-humble-nav2-bringup
+
+PC2 Transform Package:
+https://github.com/ros-perception/perception_pcl
+--------------------
+sudo apt-get install ros-humble-perception-pcl
+
+POINTCLOUD TO GRID ROS2 FORK
+
+--------------------
+sudo add-apt-repository ppa:sweptlaser/python3-pcl
+sudo apt update
+sudo apt install python3-pcl
+
+LIO_SAM
+https://github.com/TixiaoShan/LIO-SAM.git
+--------------------
+sudo add-apt-repository ppa:borglab/gtsam-release-4.0
+sudo apt update  # not necessary since Bionic
+sudo apt install libgtsam-dev libgtsam-unstable-dev
+sudo apt-get install libboost-all-dev
+# Might need used if other stuff screws up
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libgtsam.so.4.1.1 /usr/lib/x86_64-linux-gnu/libgtsam.so.4
+
+COLCON BUILDING:
+--------------------
+colcon build --continue-on-error
+
+Note: If you are running on a virtual machine and it keeps crashing, add the '--executor sequential' tag
+
+
+It may also be useful to run this line if your machine keeps crashing:
+
+BUILDFLAGS=-j4 colcon build --parallel-workers 2 

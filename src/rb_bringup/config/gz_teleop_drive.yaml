@@ -1,0 +1,30 @@
+/rb:
+  /**:
+    ros__parameters:
+    use_sim_time: true
+
+  /rb/joy_node:
+    ros__parameters:
+      dev: "joy_dev"
+      deadzone: 0.1
+      autorepeat_rate: 20.0
+
+  /rb/teleop_twist_joy_node:
+    ros__parameters:
+      axis_linear:
+        x: 1
+      scale_linear:
+        x: 1.039
+      scale_linear_turbo:
+        x: 2.078
+
+      axis_angular:
+        yaw: 0
+      scale_angular:
+        yaw: 4.0
+      scale_angular_turbo:
+        yaw: 5.36
+
+      enable_button: 3  # L2 shoulder button
+      enable_turbo_button: 4 # L1 shoulder button
+    publish_stamped_twist: true

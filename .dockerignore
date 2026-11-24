@@ -1,0 +1,12 @@
+# build/
+# log/
+# install/
+# .git/
+# .cache/
+# .backup/
+# analysis/
+# misc/
+# scripts/
+# logging/
+# src/
+# *.env

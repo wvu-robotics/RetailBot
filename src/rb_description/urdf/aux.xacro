@@ -1,0 +1,12 @@
+<!-- rb_aux.xacro -->
+
+<xacro:macro name="ros2_control_block" params="mode" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:if value="${mode == 'sim'}">
+    <!-- Sim-specific XML -->
+  </xacro:if>
+  <xacro:if value="${mode == 'real'}">
+    <!-- Real HW XML -->
+  </xacro:if>
+</xacro:macro>
+
+<xacro:ros2_control_block mode="$(arg mode)"/>

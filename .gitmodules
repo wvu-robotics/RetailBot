@@ -1,0 +1,21 @@
+[submodule "src/micro-ROS-Agent"]
+	path = src/micro-ROS-Agent
+	url = https://github.com/micro-ROS/micro-ROS-Agent.git
+[submodule "src/pico/micro_ros_raspberrypi_pico_sdk"]
+	path = src/pico/micro_ros_raspberrypi_pico_sdk
+	url = https://github.com/micro-ROS/micro_ros_raspberrypi_pico_sdk.git
+[submodule "src/pico/imu_pico_node"]
+	path = src/pico/imu_pico_node
+	url = git@github.com:wvu-robotics/imu_pico_node.git
+[submodule "src/non_ros_pkgs/gazebo_models"]
+	path = src/non_ros_pkgs/gazebo_models
+	url = https://github.com/osrf/gazebo_models.git
+[submodule "deps/pico_sdk"]
+	path = deps/pico_sdk
+	url = https://github.com/raspberrypi/pico-sdk.git
+[submodule "src/current_pico/deps/rp2daq"]
+	path = src/current_pico/current_pico/rp2daq
+	url = https://github.com/FilipDominec/rp2daq.git
+[submodule "sys_deps/ros_gz"]
+	path = sys_deps/ros_gz
+	url = https://github.com/gazebosim/ros_gz.git

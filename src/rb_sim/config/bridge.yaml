@@ -1,0 +1,39 @@
+# Bridge for cmd_vel
+# https://github.com/gazebosim/ros_gz/blob/ros2/ros_gz_bridge/README.md#example-1a-ignition-transport-talker-and-ros-2-listener
+#- ros_topic_name: "/cmd_vel"
+#  gz_topic_name: "/cmd_vel"
+#  ros_type_name: "geometry_msgs/msg/Twist"
+#  gz_type_name: "gz.msgs.Twist"
+#  queue_size: 1
+#  direction: ROS_TO_GZ
+#- ros_topic_name: "/sim_tf"
+#  gz_topic_name: "/tf"
+#  ros_type_name: "tf2_msgs/msg/TFMessage"
+#  gz_type_name: "gz.msgs.Pose_V"
+#  queue_size: 1
+#  direction: GZ_TO_ROS
+#- ros_topic_name: "/odom"
+#  gz_topic_name: "/model/robot_description/odometry"
+#  ros_type_name: "nav_msgs/msg/Odometry"
+#  gz_type_name: "gz.msgs.Odometry"
+#  queue_size: 1
+#  direction: GZ_TO_ROS
+- ros_topic_name: "/imu"
+  gz_topic_name: "/imu"
+  ros_type_name: "sensor_msgs/msg/Imu"
+  gz_type_name: "gz.msgs.IMU"
+  queue_size: 1
+  direction: GZ_TO_ROS
+- ros_topic_name: "/lidar"
+  gz_topic_name: "/lidar"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  queue_size: 1
+  direction: GZ_TO_ROS
+# If we don't bridge this then rviz won't visualize the LaserScan?
+- ros_topic_name: "/lidar/points"
+  gz_topic_name: "/lidar/points"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  gz_type_name: "gz.msgs.PointCloudPacked"
+  queue_size: 1
+  direction: GZ_TO_ROS
